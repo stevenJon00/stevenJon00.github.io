@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>購物網站</title>
+    <header>
+        <div class="left-section">
+            <h1>Welcome!</h1>
+        </div>
+        <div class="right-section">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </div>
+    </header>
+    <body>
+        <div id="sidebar">
+            <div class="menu-container" >
+                <nav>
+                    <ul>
+                        <li><button data-target="main-main" id="btn1">首頁
+                            <div class="dropdown-content" id="dropdown1">
+                                <a href="#">Option 11</a>
+                                <a href="#">Option 12</a>
+                                <a href="#">Option 13</a>
+                            </div>
+                        </li>
+                        <li><button data-target="main-class" id="btn2">產品分類
+                            <div class="dropdown-content" id="dropdown2">
+                                <a href="#">Option 21</a>
+                                <a href="#">Option 22</a>
+                                <a href="#">Option 23</a>
+                            </div>
+                        </li>
+                        <li><button data-target="main-cart" id="btn3">購物車
+                            <div class="dropdown-content" id="dropdown3">
+                                <a href="#">Option 31</a>
+                                <a href="#">Option 32</a>
+                                <a href="#">Option 33</a>
+                            </div>
+                        </li>
+                        <li><button data-target="main-member" id="btn4">會員中心
+                            <div class="dropdown-content" id="dropdown4">
+                                <a href="#">Option 41</a>
+                                <a href="#">Option 42</a>
+                                <a href="#">Option 43</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h2>產品分類</h2>
+                <ul>
+                    <li><a href="section1">衣服(1)</a></li>
+                    <li><a href="section2">鞋子(2)</a></li>
+                    <li><a href="section3">飾品(3)</a></li>
+                    <li><a href="section4">家具(4)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <main>
+                <div id="main-main" class="content">
+                    <h2>Section 1</h2>
+                    <p>This is section 1.</p>
+                </div>
+                <div id="main-class" class="content">
+                    <h2>Section 2</h2>
+                    <p>This is section 2.</p>
+                </div>
+                <div id="main-cart" class="content">
+                    <h2>Section 3</h2>
+                    <p>This is section 3.</p>
+                </div>
+                <div id="main-member" class="content">
+                    <h2>Section 4</h2>
+                    <p>This is section 4.</p>
+                </div>
+            </main>
+        </div>
+    </body>
+    <footer id="footer">
+		<p>版權所有 © 2023 購物網站</p>
+	</footer>
+    <script src="script.js"></script>
+</html>

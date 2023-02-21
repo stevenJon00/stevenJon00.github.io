@@ -1,0 +1,171 @@
+/* 全局樣式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*格子內的上下*/
+    text-align: start;/*格子內的左右*/
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+}
+
+/*header左側*/
+.left-section {
+    flex: 1;
+}
+
+/*header右側*/
+.right-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+submit {
+    padding: 0px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+  /* 整個左側區域 */
+#sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 20%;
+    height: calc(100% - 50px);
+    background-color: #eee;
+}
+
+/*左側文字區塊*/
+.menu-container {
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-container button{
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    transition: background-color 0.5s ease-in;
+    background-color: #505050;
+    color: #eee;
+}
+  
+.dropdown-content{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+}
+
+#dropdown1 {
+    top: 0;
+    left: 100%;
+  }
+  
+  #dropdown2 {
+    top: 50px;
+    left: 100%;
+  }
+  
+  #dropdown3 {
+    top: 100px;
+    left: 100%;
+  }
+  
+  #dropdown4 {
+    top: 150px;
+    left: 100%;
+  }
+  
+
+
+#btn1:hover ~ #dropdown1 {
+    display: block;
+}
+  
+#btn2:hover ~ #dropdown2 {
+    display: block;
+}
+  
+#btn3:hover ~ #dropdown3 {
+    display: block;
+}
+  
+#btn4:hover ~ #dropdown4 {
+    display: block;
+}
+
+  /* 右側區域 */
+#main {
+    margin-top: 50px;
+    margin-left: 20%;
+    padding: 20px;
+}
+  
+  /* Footer */
+#footer {
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.content {
+    margin-left: 220px; /* 讓內容區域有足夠的空間 */
+    padding: 20px;
+}
